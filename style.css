@@ -1,0 +1,49 @@
+body,div{
+
+margin:0;
+padding:0;
+
+
+}
+
+#main{
+	margin:auto;
+	border:1px solid blue;
+	width:300px;
+	height:200px;
+	margin-top:50px;
+	
+	
+	/*Firefox*/
+	display:-moz-box;
+	-moz-box-orient:horizontal;
+	
+	/*Safari.Opera. Chrome*/
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+	
+	/*W3C*/
+	display:box;
+	box-orient:horizontal;
+}
+
+
+#div1{
+	width:100px;
+	height:50px;
+	background-color:#00B366;
+	
+}
+
+#div2{
+	width:100px;
+	height:50px;
+	background-color:#80C8FE;
+}
+
+#div3{
+	width:100px;
+	height:50px;
+	background-color:#FEB380;
+}
+
