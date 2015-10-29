@@ -1,0 +1,119 @@
+body{
+	background: #f0ffff;
+	background: -moz-radial-gradient(center,ellipse cover,#f0ffff 0%,#dbffff 100%);/* FF 3.6+*/
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f0ffff), color-stop(100%,#dbffff)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f0ffff 0%,#dbffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f0ffff 0%,#dbffff 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f0ffff 0%,#dbffff 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f0ffff 0%,#dbffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0ffff', endColorstr='#dbffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	gid:DXImageTransform
+	.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	height:100%;
+	width: 100%;
+}
+
+.banner{
+	position: fixed;
+	width: 100%;
+	background: 100%;
+	top: 0;
+	color:#FFF;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-weight: lighter;
+	font-size: 13px;
+}
+a,a:visited,a:link,a:active{
+	color:green;
+	text-decoration: underline;
+
+}
+
+a,a:visited,a:link,a:active{
+
+	color:green;
+	text-decoration: underline;
+}
+
+.cycle-outer{
+	width: 534px;
+	height: 260px;
+	position: absolute;
+	top: 50%;
+	margin-top: -160px;
+	left: 50%;
+	margin-left: -267px;
+}
+
+.cycle-wrapper{
+	width: 534px;
+	height: 260px;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.cycle-body{
+	margin-left: 125px;
+}
+/*座椅*/
+.seat{
+	width: 50px;
+	height: 10px;
+	background: #666;
+	border-radius: 44%;
+	position: absolute;
+	margin: -73px 0 0 15px;
+}
+
+.seat:after{
+	width: 0px;
+	height: 0px;
+	border-style:solid;
+	border-width: 0 40px 16px 40px;
+	border-color:transparent transparent #666 transparent;
+	content: "";
+	position: absolute;
+	z-index: 3;
+	-webkit-transform:rotate(-12deg);
+	-moz-transform: rotate(-12deg);
+	transform: rotate(-12deg);
+	position: absolute;
+	-webkit-border-radius:100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	margin: 0 0 0 -26px;
+}
+
+.seat:before{
+	width: 0px;
+	height: 0px;
+	border-style:solid;
+	border-width: 0 40px 16px 40px;
+	border-color:transparent transparent #666 transparent;
+	content: "";
+	position: absolute;
+	z-index: 3;
+	-webkit-transform: rotate(179deg);
+	-moz-transform: rotate(179deg);
+	transform: rotate(179deg);
+	position: absolute;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	border-radius: 100%;
+	margin: 0 0 0 -26px;/*左边太靠左了 -24px差不多*/
+}
+
+.seat span{
+	width: 32px;
+	height: 19px;
+	background: #666;
+	border-radius: 100%;
+	position: absolute;
+	margin:1px 0 0 -22px;
+	-webkit-transform:rotate(-11deg);
+	-moz-transform: rotate(-11deg);
+	transform: rotate(-11deg);
+}
